@@ -52,13 +52,13 @@ export function Calculator({ counter, onCalculate, onReset }: CalculatorProps) {
             amounts={amounts}
             onCalculate={handleIncrease}
             operatorSymbol="+"
-            buttonClassName={cn(currentTheme.border)}
+            buttonClassName={cn(currentTheme.counterText, currentTheme.border)}
           />
           <ButtonGroup
             amounts={amounts}
             onCalculate={handleDecrease}
             operatorSymbol="-"
-            buttonClassName={cn(currentTheme.border)}
+            buttonClassName={cn(currentTheme.counterText, currentTheme.border)}
           />
         </div>
       </section>
